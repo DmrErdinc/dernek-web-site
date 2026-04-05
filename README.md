@@ -772,20 +772,27 @@ chown -R www-data:www-data public/uploads
 
 ### İletişim Bilgileri
 
-📧 **Email:** info@kahramanlardernegi.org
+📧 **Email:** eraydemir300@gmail.com
 
-📱 **Telefon:** +90 (212) 555 0009
+📱 **Telefon:** +90 (552) 718 9160
 
 📍 **Adres:** Atatürk Mahallesi, Cumhuriyet Caddesi No:123, Kadıköy/İstanbul
 
 ---
 
 ### Sosyal Medya
-
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/kahramanlardernegi)
-[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/kahramanlardernegi)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/kahramanlardernegi)
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/kahramanlardernegi)
+<a href="https://github.com/DmrErdinc">
+    <img src="https://img.shields.io/badge/GitHub-DmrErdinc-181717?style=for-the-badge&logo=github" />
+  </a>
+<a href="https://dmrerdinc.com/">
+    <img src="https://img.shields.io/badge/Website-dmrerdinc.com-6d28d9?style=for-the-badge" />
+  </a>
+  <a href="mailto:eraydemir300@gmail.com">
+    <img src="https://img.shields.io/badge/E--posta-İletişim-e11d48?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://x.com/dmrerdincc">
+    <img src="https://img.shields.io/badge/X-@dmrerdincc-111111?style=for-the-badge&logo=x" />
+  </a>
 
 </div>
 
@@ -801,7 +808,7 @@ Bu proje özel kullanım içindir. Tüm hakları saklıdır.
 
 ### ⭐ Projeyi Beğendiyseniz Yıldız Vermeyi Unutmayın!
 
-**Made with ❤️ by Ölümsüz Kahramanlar Derneği**
+
 
 [⬆ Başa Dön](#️-ölümsüz-kahramanlar-derneği)
 
