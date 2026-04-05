@@ -135,282 +135,63 @@ docker-compose exec app npx prisma db seed
 
 ---
 
-## 📸 Ekran Görüntüleri
-
-### 🌐 Public Web Sitesi
-
-<details open>
-<summary><b>🏠 Ana Sayfa</b></summary>
-
-#### Hero Bölümü
-Modern ve etkileyici hero slider ile ziyaretçilerinizi karşılayın.
-
-![Ana Sayfa Hero](docs/screenshots/homepage-hero.png)
-
-#### İstatistikler ve Hızlı Erişim
-Derneğinizin başarılarını sayılarla gösterin.
-
-![Ana Sayfa İstatistikler](docs/screenshots/homepage-stats.png)
-
-#### Son Haberler ve Etkinlikler
-Güncel içeriklerinizi öne çıkarın.
-
-![Ana Sayfa Haberler](docs/screenshots/homepage-news.png)
-
-</details>
-
-<details>
-<summary><b>ℹ️ Hakkımızda</b></summary>
-
-Derneğinizin misyon, vizyon ve değerlerini profesyonel bir şekilde sunun.
-
-![Hakkımızda](docs/screenshots/about.png)
-
-**Özellikler:**
-- 📝 Misyon ve vizyon
-- 🎯 Değerler
-- 📜 Tarihçe
-- 🎖️ Hedefler
-
-</details>
-
-<details>
-<summary><b>📰 Haberler</b></summary>
-
-Kategorize edilmiş, aranabilir haber sistemi.
-
-![Haberler Listesi](docs/screenshots/news-list.png)
-
-**Özellikler:**
-- 🏷️ Kategori filtreleme
-- 🔍 Arama özelliği
-- 📅 Tarih sıralama
-- 🖼️ Görsel destekli
-
-</details>
-
-<details>
-<summary><b>📅 Etkinlikler</b></summary>
-
-Yaklaşan ve geçmiş etkinliklerinizi sergileyin.
-
-![Etkinlikler](docs/screenshots/events.png)
-
-**Özellikler:**
-- 📆 Takvim görünümü
-- 📍 Konum bilgisi
-- ⏰ Tarih ve saat
-- 🎫 Detaylı açıklama
-
-</details>
-
-<details>
-<summary><b>🎯 Faaliyetler ve Projeler</b></summary>
-
-Derneğinizin yürüttüğü projeleri tanıtın.
-
-![Faaliyetler](docs/screenshots/projects.png)
-
-**Özellikler:**
-- 📊 Proje kategorileri
-- 🖼️ Çoklu görsel
-- 📈 İlerleme durumu
-- 📝 Detaylı açıklama
-
-</details>
-
-<details>
-<summary><b>🖼️ Galeri</b></summary>
-
-Fotoğraflarınızı kategorize edilmiş galeriler halinde sunun.
-
-![Galeri](docs/screenshots/gallery.png)
-
-**Özellikler:**
-- 🗂️ Kategori sistemi
-- 🔍 Lightbox görünüm
-- 📱 Responsive grid
-- ⚡ Hızlı yükleme
-
-</details>
-
-<details>
-<summary><b>👥 Yönetim Kurulu</b></summary>
-
-Yönetim kurulu üyelerinizi profesyonel kartlarla tanıtın.
-
-![Yönetim Kurulu](docs/screenshots/board.png)
-
-**Özellikler:**
-- 👤 Profil fotoğrafları
-- 💼 Görev unvanları
-- 📝 Biyografi
-- 🎨 Modern kartlar
-
-</details>
-
-<details>
-<summary><b>📞 İletişim</b></summary>
-
-İletişim formu ve harita entegrasyonu.
-
-![İletişim](docs/screenshots/contact.png)
-
-**Özellikler:**
-- 📧 İletişim formu
-- 🗺️ Google Maps
-- 📱 İletişim bilgileri
-- 🕐 Çalışma saatleri
-
-</details>
-
-<details>
-<summary><b>💰 Bağış ve Destek</b></summary>
-
-Banka hesap bilgileri ve bağış rehberi.
-
-![Bağış](docs/screenshots/donation.png)
-
-**Özellikler:**
-- 🏦 Banka hesapları
-- 💳 IBAN bilgileri
-- 📋 Kopyalama butonu
-- 📝 Ek açıklamalar
-
-</details>
-
----
-
-### 🔐 Admin Paneli
-
-<details open>
-<summary><b>🔑 Giriş Ekranı</b></summary>
-
-Güvenli ve modern admin giriş ekranı.
-
-![Admin Giriş](docs/screenshots/admin-login.png)
-
-**Güvenlik Özellikleri:**
-- 🔒 Şifreli giriş
-- 🛡️ CSRF koruması
-- 🔐 Session yönetimi
-- ⏱️ Timeout kontrolü
-
-</details>
-
-<details>
-<summary><b>📊 Dashboard</b></summary>
-
-İstatistikler ve hızlı erişim paneli.
-
-![Admin Dashboard](docs/screenshots/admin-dashboard.png)
-
-**Dashboard Özellikleri:**
-- 📈 İstatistik kartları
-- 📋 Son eklenen içerikler
-- ✉️ Okunmamış mesajlar
-- 🔔 Yaklaşan etkinlikler
-
-</details>
-
-<details>
-<summary><b>⚙️ Site Ayarları</b></summary>
-
-Tüm site ayarlarını tek yerden yönetin.
-
-![Site Ayarları](docs/screenshots/admin-settings.png)
-
-**Ayarlanabilir Özellikler:**
-- 🏢 Site bilgileri
-- 📞 İletişim bilgileri
-- 🌐 Sosyal medya
-- 💬 WhatsApp numarası
-- 🗺️ Harita koordinatları
-- 🎨 Logo ve favicon
-
-</details>
-
-<details>
-<summary><b>📰 Haber Yönetimi</b></summary>
-
-Haber ekleme, düzenleme ve yönetimi.
-
-![Haber Listesi](docs/screenshots/admin-news.png)
-
-![Haber Düzenleme](docs/screenshots/admin-news-edit.png)
-
-**Yönetim Özellikleri:**
-- ✏️ WYSIWYG editör
-- 🏷️ Kategori yönetimi
-- 🖼️ Görsel yükleme
-- 📅 Yayınlama tarihi
-- 👁️ Önizleme modu
-- 🔍 Arama ve filtreleme
-
-</details>
-
-<details>
-<summary><b>📅 Etkinlik Yönetimi</b></summary>
-
-Etkinlik oluşturma ve düzenleme.
-
-![Etkinlik Yönetimi](docs/screenshots/admin-events.png)
-
-**Yönetim Özellikleri:**
-- 📆 Tarih seçici
-- ⏰ Saat belirleme
-- 📍 Konum bilgisi
-- 🎫 Afiş yükleme
-- 📝 Detaylı açıklama
-
-</details>
-
-<details>
-<summary><b>🖼️ Galeri Yönetimi</b></summary>
-
-Görsel yükleme ve kategori yönetimi.
-
-![Galeri Yönetimi](docs/screenshots/admin-gallery.png)
-
-**Yönetim Özellikleri:**
-- 📤 Toplu yükleme
-- 🗂️ Kategori sistemi
-- ✂️ Görsel düzenleme
-- 🔄 Sürükle-bırak
-- 🗑️ Toplu silme
-
-</details>
-
-<details>
-<summary><b>👥 Yönetim Kurulu Yönetimi</b></summary>
-
-Yönetim kurulu üye yönetimi.
-
-![Yönetim Kurulu Yönetimi](docs/screenshots/admin-board.png)
-
-**Yönetim Özellikleri:**
-- 👤 Profil yönetimi
-- 📸 Fotoğraf yükleme
-- 💼 Görev tanımları
-- 📝 Biyografi
-- 🔢 Sıralama
-
-</details>
-
-<details>
-<summary><b>💰 Bağış Bilgileri</b></summary>
-
-Banka hesap bilgileri yönetimi.
-
-![Bağış Yönetimi](docs/screenshots/admin-donation.png)
-
-**Yönetim Özellikleri:**
-- 🏦 Banka hesapları
-- 💳 IBAN bilgileri
-- 📝 Açıklama metinleri
-- ➕ Çoklu hesap
-
-</details>
+## 📸 Demo ve Önizleme
+
+### 🌐 Canlı Demo
+
+Projeyi yerel olarak çalıştırarak tüm özellikleri test edebilirsiniz:
+
+```bash
+# Projeyi başlatın
+docker-compose up -d
+
+# Tarayıcınızda açın
+http://localhost:3000        # Public site
+http://localhost:3000/admin  # Admin panel
+```
+
+### 📱 Sayfa Yapısı
+
+<table>
+<tr>
+<td width="50%">
+
+#### 🌐 Public Sayfalar
+- 🏠 **Ana Sayfa** - Hero slider, istatistikler, son içerikler
+- ℹ️ **Hakkımızda** - Misyon, vizyon, değerler, tarihçe
+- 📰 **Haberler** - Kategorize edilmiş haberler, arama
+- 📅 **Etkinlikler** - Takvim, konum, detaylar
+- 🎯 **Faaliyetler** - Projeler, çoklu görsel
+- 🖼️ **Galeri** - Kategorize fotoğraflar, lightbox
+- 👥 **Yönetim Kurulu** - Üye profilleri, görevler
+- 📞 **İletişim** - Form, harita, bilgiler
+- 💰 **Bağış** - Banka hesapları, IBAN
+- ❓ **SSS** - Sık sorulan sorular
+- 📄 **KVKK & Gizlilik** - Yasal metinler
+
+</td>
+<td width="50%">
+
+#### 🔐 Admin Sayfaları
+- 🔑 **Giriş** - Güvenli authentication
+- 📊 **Dashboard** - İstatistikler, özet
+- ⚙️ **Site Ayarları** - Genel ayarlar, sosyal medya
+- 📰 **Haber Yönetimi** - CRUD, kategoriler
+- 📅 **Etkinlik Yönetimi** - Tarih, konum, afiş
+- 🎯 **Proje Yönetimi** - Faaliyetler, görseller
+- 🖼️ **Galeri Yönetimi** - Toplu upload, kategoriler
+- 👥 **Yönetim Kurulu** - Üye yönetimi
+- 💰 **Bağış Bilgileri** - Hesap yönetimi
+- ✉️ **Mesajlar** - İletişim formları
+- ❓ **SSS Yönetimi** - Soru-cevap
+- 📄 **Yasal Metinler** - KVKK, gizlilik
+- 🔐 **Şifre Değiştir** - Güvenlik
+
+</td>
+</tr>
+</table>
+
+> 💡 **Not:** Ekran görüntüleri için projeyi çalıştırıp sayfaları ziyaret edebilirsiniz. Her sayfa responsive tasarıma sahiptir.
 
 ---
 
