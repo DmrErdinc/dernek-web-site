@@ -1,0 +1,238 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  username  String   @unique
+  password  String
+  name      String
+  role      String   @default("admin")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("users")
+}
+
+model SiteSettings {
+  id              String   @id @default(cuid())
+  siteName        String   @default("Ölümsüz Kahramanlar Derneği")
+  siteDescription String?  @db.Text
+  siteSlogan      String?
+  logo            String?
+  favicon         String?
+  phone           String?
+  email           String?
+  address         String?
+  whatsappNumber  String?
+  facebookUrl     String?
+  twitterUrl      String?
+  instagramUrl    String?
+  youtubeUrl      String?
+  linkedinUrl     String?
+  metaTitle       String?
+  metaDescription String?
+  copyrightText   String?
+  disabledPages   String[] @default([])
+  mapLatitude     String?
+  mapLongitude    String?
+  mapZoom         Int?     @default(15)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@map("site_settings")
+}
+
+model PageContent {
+  id          String   @id @default(cuid())
+  page        String   @unique // "about", "home", etc.
+  title       String?
+  content     String?  @db.Text
+  mission     String?  @db.Text
+  vision      String?  @db.Text
+  history     String?  @db.Text
+  values      String?  @db.Text
+  goals       String?  @db.Text
+  image       String?
+  images      String[] @default([])
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("page_contents")
+}
+
+model NewsCategory {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  slug      String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  news      News[]
+
+  @@map("news_categories")
+}
+
+model News {
+  id          String        @id @default(cuid())
+  title       String
+  slug        String        @unique
+  summary     String?       @db.Text
+  content     String        @db.Text
+  image       String?
+  images      String[]      @default([])
+  categoryId  String?
+  category    NewsCategory? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  isPublished Boolean       @default(true)
+  publishedAt DateTime?
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  @@map("news")
+}
+
+model Event {
+  id          String    @id @default(cuid())
+  title       String
+  slug        String    @unique
+  description String    @db.Text
+  image       String?
+  images      String[]  @default([])
+  location    String?
+  eventDate   DateTime
+  eventTime   String?
+  isPublished Boolean   @default(true)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@map("events")
+}
+
+model Project {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  summary     String?  @db.Text
+  description String   @db.Text
+  image       String?
+  images      String[] @default([])
+  category    String?
+  startDate   DateTime?
+  endDate     DateTime?
+  isPublished Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("projects")
+}
+
+model GalleryCategory {
+  id        String        @id @default(cuid())
+  name      String        @unique
+  slug      String        @unique
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+  items     GalleryItem[]
+
+  @@map("gallery_categories")
+}
+
+model GalleryItem {
+  id          String           @id @default(cuid())
+  title       String
+  description String?
+  image       String
+  categoryId  String?
+  category    GalleryCategory? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  isPublished Boolean          @default(true)
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+
+  @@map("gallery_items")
+}
+
+model BoardMember {
+  id          String   @id @default(cuid())
+  name        String
+  position    String
+  bio         String?  @db.Text
+  image       String?
+  gender      String   @default("male") // "male" or "female"
+  order       Int      @default(0)
+  isPublished Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("board_members")
+}
+
+model FAQ {
+  id          String   @id @default(cuid())
+  question    String
+  answer      String   @db.Text
+  order       Int      @default(0)
+  isPublished Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("faqs")
+}
+
+model DonationInfo {
+  id             String   @id @default(cuid())
+  title          String   @default("Bağış Bilgileri")
+  description    String?  @db.Text
+  bankAccounts   Json     @default("[]")
+  cryptoAddress  String?
+  additionalInfo String?  @db.Text
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@map("donation_info")
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  subject   String?
+  message   String   @db.Text
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("contact_messages")
+}
+
+model HeroSection {
+  id          String   @id @default(cuid())
+  title       String
+  subtitle    String?
+  description String?  @db.Text
+  image       String?
+  images      String[] @default([])
+  buttonText  String?
+  buttonLink  String?
+  isActive    Boolean  @default(true)
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("hero_sections")
+}
+
+model LegalPage {
+  id        String   @id @default(cuid())
+  page      String   @unique // "privacy" or "kvkk"
+  title     String
+  content   String   @db.Text
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("legal_pages")
+}
